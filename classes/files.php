@@ -1,4 +1,4 @@
-
+<?php
 function getAllFiles() {
     $files = array();
     $links = opendir('downloads/links');
