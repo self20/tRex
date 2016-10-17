@@ -2,6 +2,7 @@
     include "classes/files.php";
 ?>
 <!DOCTYPE html>
+<html>
 <head>
   <link href="node_modules/video.js/dist/video-js.min.css" rel="stylesheet"/>
   <script src="node_modules/video.js/dist/video.min.js"></script>
@@ -24,3 +25,4 @@
     }
 ?>
 </body>
+</html>

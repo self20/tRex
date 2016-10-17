@@ -1,13 +1,14 @@
 <?php
 function getAllFiles() {
+    $dir = "downloads/links";
     $files = array();
-    $links = opendir('downloads/links');
+    $links = opendir($dir);
     while ( $file = readdir($links) ) {
-        if ( is_link($file) ) {
-            $files[] = $file;
+        if ( is_link($dir . "/" . $file) ) {
+            $files[] = $dir .  "/" . $file;
         }
     }
-    clisedir($links);
+    closedir($links);
 
     return ($files);
 }
